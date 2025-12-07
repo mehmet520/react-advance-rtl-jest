@@ -1,6 +1,7 @@
 import { screen, render } from "@testing-library/react";
 import Greeting from "./Greeting";
 import userEvent from "@testing-library/user-event";
+import { test, expect } from "@jest/globals";
 
 test("kullanci adini girip mesaja basınca selamlama mesajı görüntülenir", async () => {
   render(<Greeting />);
